@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <title>Yazma Hız Testi</title>
+</head>
+
+<body>
+    <audio id="music" src="music.mp3" type="audio/mpeg"></audio>
+    <div id="canvas">
+        <header>
+            <div class="wpm">
+                <h2>WPM</h2>
+                <h3 id="wpmScore">__</h3>
+            </div>
+            <div class="timer">
+                <img src="/images/timer.png" alt="">
+                <h2 id="time">60</h2>
+            </div>
+            <div class="sound">
+                <input type="checkbox" id="musicControl">
+                <label for="musicControl" class="sesDurumu"></label>
+            </div>
+        </header>
+        <main>
+                <h1 id="word"></h1>
+            <input id="input" type="text" placeholder="Başlamak için Yaz">
+        </main>
+        <footer>
+            <div id="logo">
+                <h3>YAZMA HIZ TESTİ</h3>
+            </div>
+            <button id="tryAgain"><img src="/images/try.png" alt=""></button>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
